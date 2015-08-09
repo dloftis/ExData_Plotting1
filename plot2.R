@@ -6,7 +6,7 @@ plot2 <- function () {
   ## Read data
   consuption_data <- read.table("household_power_consumption.txt", header = TRUE, 
                                 sep = ";", na.strings = "?", 
-                                colClasses = c('myDate','factor','character','character','character',
+                                colClasses = c('consDate','factor','character','character','character',
                                                'character','character','character','character'))
   
   feb_data <- subset(consuption_data, Date %in% c(as.Date('2007-02-01'), as.Date('2007-02-02')))
